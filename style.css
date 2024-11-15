@@ -1,0 +1,186 @@
+body {
+    box-sizing: border-box;    
+    font-family: "Montserrat", sans-serif;
+}
+
+h2, 
+p {
+    margin: 0;
+}
+
+.form {
+    position: relative;
+    box-sizing: border-box;    
+    width: 960px;
+    height: 775px;
+    background: #0f0f11;
+    padding: 60px 75px;
+    margin: 0 auto;
+}
+
+input[type='radio'] {
+    appearance: none;
+    margin: 0;
+}
+
+.radio-label {
+    position: absolute;
+    display: inline-block;
+    height: 140px;
+    width: 390px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer; 
+    border: 1px dashed #9ea2aa;
+}
+
+.radio-content {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 90%;
+}
+
+.first {
+    left: 75px;
+}
+
+.last {
+    top: 60px;
+    right: 75px;
+}
+
+.title-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.title-group > span {
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 13px;
+    color: #9ea2aa;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.label-text {
+    display: flex;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ea2aa;
+    margin: 0 20px 25px 25px;
+    display: inline-block;
+    text-align: end;
+    width: 126px;
+}
+
+.fieldset {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 146px);
+
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ea2aa;
+    border: none;
+    margin-top: 190px;
+}
+
+.legend {
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 20px;
+}
+
+.label {
+    align-self: center;
+    text-align: end;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 10px;
+}
+
+.input-1 {
+    grid-column: span 3;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-bottom > button {
+    color: #fbd13e;
+    border: 1px solid #fbd13e;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 169%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 28px;
+    cursor: pointer;
+} 
+
+button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+} 
+
+.form-bottom > span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #9ea2aa;
+} 
+
+.textarea-input {
+    width: 460px;
+    height: 96px;
+    resize: none;
+}
+
+.textarea {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+input[type='radio']:checked + .radio-label {
+    border-color: #fbd13e; 
+}
+
+#radio-2:checked ~ .fieldset {
+    display: none;
+}
+
+#radio-2:checked ~ .textarea {
+    margin-top: 200px;
+}
+

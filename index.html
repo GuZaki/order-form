@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form class="form" action="">
+        <input id="radio-1" type="radio" name="name" checked>
+        <label class="radio-label first" for="radio-1">
+            <div class="radio-content">
+                <div class="title-group">
+                    <h2 class="title">Бесконтактная доставка</h2> 
+                    <span>+0 ₽</span>
+                </div>
+                <p class="text">Доставка по Москве в пределах МКАД<br>
+                Осуществляется: ежедневно с 12:00 до 00:00,<br> 
+                Диапозон времени: от 1 до 1.5 часов</p>
+            </div> 
+        </label>
+
+        <input id="radio-2" type="radio" name="name">
+        <label class="radio-label last" for="radio-2">
+            <div class="radio-content">
+                <div class="title-group">
+                    <h2 class="title">Самовывоз</h2> 
+                    <span>+0 ₽</span>
+                </div>
+                <p class="text">Доступен с 12:00 до 00:00<br> 
+                    По адресу
+                    <a href="#">ул. Улофа Пальме 5с2</a>
+                </p>
+            </div>
+        </label>
+
+        <fieldset class="fieldset">
+            <legend class="legend">Адрес доставки</legend>
+
+            <label class="label" for="">Улица</label>
+            <input class="input-1" type="text" name="street">
+            
+            <label class="label" for="">дом</label>
+            <input class="input" type="text" name="bild">
+            
+            <label class="label" for="">квартира</label>
+            <input class="input" type="text" name="apatment">
+        </fieldset>
+
+        <div class="textarea">
+            <label class="label-text" for="">Комментарий к заказу</label>
+            <textarea class="textarea-input" type="textarea"></textarea>
+        </div>
+                
+        <div class="form-bottom">
+            <button type="submit">Продолжить</button>
+            <span>Остался послендий шаг</span>
+        </div>        
+    </form>
+</body>
+</html>
